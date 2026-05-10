@@ -1,0 +1,22 @@
+java.lang.RuntimeException: Unable to instantiate application com.moviecine.movieid.app.AppApplication package com.reelwave.shorttv: java.lang.ClassNotFoundException: Didn't find class "com.moviecine.movieid.app.AppApplication" on path: DexPathList[[zip file "/data/app/~~Vi74Dpmvhj_npFIZjF4Upw==/com.reelwave.shorttv-V_3DROCdwLa0sD26MjKZeA==/base.apk"],nativeLibraryDirectories=[/data/app/~~Vi74Dpmvhj_npFIZjF4Upw==/com.reelwave.shorttv-V_3DROCdwLa0sD26MjKZeA==/lib/arm64, /data/app/~~Vi74Dpmvhj_npFIZjF4Upw==/com.reelwave.shorttv-V_3DROCdwLa0sD26MjKZeA==/base.apk!/lib/arm64-v8a, /system/lib64, /system_ext/lib64]]
+	at android.app.LoadedApk.makeApplicationInner(LoadedApk.java:1493)
+	at android.app.LoadedApk.makeApplicationInner(LoadedApk.java:1422)
+	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:7080)
+	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(Unknown Source:0)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2220)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loopOnce(Looper.java:211)
+	at android.os.Looper.loop(Looper.java:300)
+	at android.app.ActivityThread.main(ActivityThread.java:8289)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:559)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:954)
+Caused by: java.lang.ClassNotFoundException: Didn't find class "com.moviecine.movieid.app.AppApplication" on path: DexPathList[[zip file "/data/app/~~Vi74Dpmvhj_npFIZjF4Upw==/com.reelwave.shorttv-V_3DROCdwLa0sD26MjKZeA==/base.apk"],nativeLibraryDirectories=[/data/app/~~Vi74Dpmvhj_npFIZjF4Upw==/com.reelwave.shorttv-V_3DROCdwLa0sD26MjKZeA==/lib/arm64, /data/app/~~Vi74Dpmvhj_npFIZjF4Upw==/com.reelwave.shorttv-V_3DROCdwLa0sD26MjKZeA==/base.apk!/lib/arm64-v8a, /system/lib64, /system_ext/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:259)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:642)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:578)
+	at android.app.AppComponentFactory.instantiateApplication(AppComponentFactory.java:76)
+	at androidx.core.app.CoreComponentFactory.instantiateApplication(Unknown Source:0)
+	at android.app.Instrumentation.newApplication(Instrumentation.java:1250)
+	at android.app.LoadedApk.makeApplicationInner(LoadedApk.java:1485)
+	... 11 more
