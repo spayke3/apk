@@ -8,8 +8,3 @@ repo init --depth=1 --no-repo-verify -u https://android.googlesource.com/platfor
   chmod +x sparkos_overlay/inject_branding.sh
   ./sparkos_overlay/inject_branding.sh
   
-  source build/envsetup.sh
-  lunch aosp_arm64-trunk_staging-userdebug
-  m systemimage
-  
-  xz -z -9 out/target/product/generic_arm64/system.img
